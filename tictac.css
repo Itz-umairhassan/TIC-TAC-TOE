@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#body-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#fde1d76e;
+}
+#heading{
+    color:black;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#tic-tac-container {
+    padding: 5px;
+    width: 75vmin;
+    height: 75vmin;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 4px;
+}
+
+.item {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(6, 6, 134);
+    background-color: rgb(38 38 40);
+    background-color: #008b7ecc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: #008b7de8;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+
+.layer {
+    background-color: rgba(222, 184, 135, 0.755);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer p {
+    font-size: 2.4rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    display: block;
+    margin: 5% auto;
+    cursor: pointer;
+}
+
+/*---- Adding responsiveness  ------------------*/
+
+@media screen and (max-width:575px) {
+    .layer p{
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .layer p{
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #heading{
+        
+        font-size: 1.5rem;
+    }
+
+}
+
+@media  screen and (max-width:300px) {
+    h1{
+        font-size:3rem ;
+    }
+}
